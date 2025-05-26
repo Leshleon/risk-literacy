@@ -58,8 +58,3 @@ Please find below my contact information. While I am wary of sharing raw files, 
 **Shivam S**
 - Email: shivam.s@learner.manipal.edu
 - GitHub: github.com/Leshleon
-
----
-
-## Keywords
-event study, finance, CAPM, Fama-French, rookie directors, PSM, Python, financial markets, data wrangling, corporate governance, statistical analysis
