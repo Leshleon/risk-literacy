@@ -17,3 +17,4 @@ __pycache__/
 *.png
 *.sav
 *.dta
+*.venv
