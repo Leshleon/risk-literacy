@@ -17,4 +17,6 @@ __pycache__/
 *.png
 *.sav
 *.dta
-*.venv
+
+#virutal env
+*.venv/
