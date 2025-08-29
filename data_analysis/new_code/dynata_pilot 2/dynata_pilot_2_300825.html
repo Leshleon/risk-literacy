@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>dynata_pilot_190825</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>dynata_pilot_2_300825</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7565,73 +7565,73 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">scenarios_answers_dict</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">'M25-1'</span><span class="p">:</span> <span class="s1">'Call for help right away and arrange urgent medical care.'</span><span class="p">,</span>
+    <span class="s1">'M25-1'</span><span class="p">:</span> <span class="s1">'Try calling a close friend or hostel mate for immediate help, and together ensure he gets urgent medical care.'</span><span class="p">,</span>
     <span class="s1">'M25-2'</span><span class="p">:</span> <span class="s1">'Use allergy medication if available and call for emergency help.'</span><span class="p">,</span>
     <span class="s1">'M25-3'</span><span class="p">:</span> <span class="s1">'Call for the emergency'</span><span class="p">,</span>
-    <span class="s1">'M25-4'</span><span class="p">:</span> <span class="s1">'Clean wound, stop bleeding, cover it, and seek medical help.'</span><span class="p">,</span>
+    <span class="s1">'M25-4'</span><span class="p">:</span> <span class="s1">'Clean the wound carefully, press to control the bleeding, cover it, and arrange to see a doctor right away.'</span><span class="p">,</span>
     <span class="s1">'M25-5'</span><span class="p">:</span> <span class="s1">'Stop, sit upright, slow his breathing, and ask for help.'</span><span class="p">,</span>
-    <span class="s1">'M25-6'</span><span class="p">:</span> <span class="s1">'Block his card and contact the bank helpline right away.'</span><span class="p">,</span>
-    <span class="s1">'M25-7'</span><span class="p">:</span> <span class="s1">'Hang up and verify with the real police station.'</span><span class="p">,</span>
-    <span class="s1">'M25-8'</span><span class="p">:</span> <span class="s1">'Ignore the link and report the issue to the official bank helpline/credit bureau.'</span><span class="p">,</span>
+    <span class="s1">'M25-6'</span><span class="p">:</span> <span class="s1">'Try calling or messaging the bank’s helpline right away to report the situation and at the same time use the app to freeze or block his card if possible.'</span><span class="p">,</span>
+    <span class="s1">'M25-7'</span><span class="p">:</span> <span class="s1">'Hang up the call without giving any information, then look up and contact the official police station independently to check if the demand was real.'</span><span class="p">,</span>
+    <span class="s1">'M25-8'</span><span class="p">:</span> <span class="s1">'Call the bank directly using a number on their official website and ask if the loan email is genuine, without clicking the link.'</span><span class="p">,</span>
     <span class="s1">'M25-9'</span><span class="p">:</span> <span class="s1">'Research the scheme independently using RBI or SEBI advisories.'</span><span class="p">,</span>
     <span class="s1">'M25-10'</span><span class="p">:</span> <span class="s1">'Check his payment/card records separately and contact his provider if needed.'</span><span class="p">,</span>
     <span class="s1">'M25-11'</span><span class="p">:</span> <span class="s1">'Ignore the link, verify status in-app, and enable security features.'</span><span class="p">,</span>
     <span class="s1">'M25-12'</span><span class="p">:</span> <span class="s1">'Block UPI and logout from accounts immediately.'</span><span class="p">,</span>
-    <span class="s1">'M25-13'</span><span class="p">:</span> <span class="s1">'Refuse, disconnect, and verify only via official bank contacts.'</span><span class="p">,</span>
-    <span class="s1">'M25-14'</span><span class="p">:</span> <span class="s1">'Change password, enable two-factor authentication, and review security.'</span><span class="p">,</span>
+    <span class="s1">'M25-13'</span><span class="p">:</span> <span class="s1">'Refuse the caller, then disconnect and reach out to the bank based on the phone number on the debit card.'</span><span class="p">,</span>
+    <span class="s1">'M25-14'</span><span class="p">:</span> <span class="s1">'Change the account password, look through security settings, and enable additional protection like two factor login.'</span><span class="p">,</span>
     <span class="s1">'M25-15'</span><span class="p">:</span> <span class="s1">'Save evidence, secure all accounts, seek support, and prepare a report.'</span><span class="p">,</span>
-    <span class="s1">'M25-16'</span><span class="p">:</span> <span class="s1">'Collect the messages as evidence and reach out to a counselor or authority for help.'</span><span class="p">,</span>
-    <span class="s1">'M25-17'</span><span class="p">:</span> <span class="s1">'Discuss things calmly with the friend, or if it continues, talk to a hostel authority.'</span><span class="p">,</span>
+    <span class="s1">'M25-16'</span><span class="p">:</span> <span class="s1">'Take screenshots of the posts and messages, and then reach out to a trusted authority figure or counsellor who can step in to support him.'</span><span class="p">,</span>
+    <span class="s1">'M25-17'</span><span class="p">:</span> <span class="s1">'Confront the friend calmly to clear things up, and if it keeps happening, get hostel staff involved.'</span><span class="p">,</span>
     <span class="s1">'M25-18'</span><span class="p">:</span> <span class="s1">'Firmly refuse and step away from the situation if necessary, seeking help if required.'</span><span class="p">,</span>
     <span class="s1">'M25-19'</span><span class="p">:</span> <span class="s1">'Keep the messages as evidence and reach out to a student helpline or official channel, even if he’s nervous.'</span><span class="p">,</span>
     <span class="s1">'M25-20'</span><span class="p">:</span> <span class="s1">'Talk honestly about his feelings with a supportive friend, mentor, or counselor.'</span><span class="p">,</span>
     
     
-    <span class="s1">'M59-1'</span><span class="p">:</span> <span class="s1">'Take aspirin and call for help or emergency services right away.'</span><span class="p">,</span>
-    <span class="s1">'M59-2'</span><span class="p">:</span> <span class="s1">'Use allergy medication and get emergency medical help.'</span><span class="p">,</span>
-    <span class="s1">'M59-3'</span><span class="p">:</span> <span class="s1">'Call emergency services at once and stay put.'</span><span class="p">,</span>
-    <span class="s1">'M59-4'</span><span class="p">:</span> <span class="s1">'Apply pressure, elevate the hand, and seek urgent help.'</span><span class="p">,</span>
-    <span class="s1">'M59-5'</span><span class="p">:</span> <span class="s1">'Sit, ask for something sugary, and alert others for support.'</span><span class="p">,</span>
+    <span class="s1">'M59-1'</span><span class="p">:</span> <span class="s1">'Take an aspirin to reduce the risk of heart trouble, then call emergency services.'</span><span class="p">,</span>
+    <span class="s1">'M59-2'</span><span class="p">:</span> <span class="s1">'Use the allergy medicine he carries with him—like an antihistamine—and at the same time ask someone nearby to get emergency help.'</span><span class="p">,</span>
+    <span class="s1">'M59-3'</span><span class="p">:</span> <span class="s1">'Grab his phone and dial emergency services straight away, telling them what’s happening even if his words come out unclear, and stay put until help arrives.'</span><span class="p">,</span>
+    <span class="s1">'M59-4'</span><span class="p">:</span> <span class="s1">'Quickly grab a cloth or towel to press firmly on the wound, raise his hand higher to slow the bleeding, and call for urgent help.'</span><span class="p">,</span>
+    <span class="s1">'M59-5'</span><span class="p">:</span> <span class="s1">'Sit down if possible, mention to someone nearby that he’s feeling unwell, and ask for anything sweet or sugary he can have while he waits for help.'</span><span class="p">,</span>
 
-    <span class="s1">'M59-6'</span><span class="p">:</span> <span class="s1">'Block his card and freeze the account using the app or helpline.'</span><span class="p">,</span>
+    <span class="s1">'M59-6'</span><span class="p">:</span> <span class="s1">'Use his banking app or the helpline to stop further transactions right away and then check what else needs to be reported.'</span><span class="p">,</span>
     <span class="s1">'M59-7'</span><span class="p">:</span> <span class="s1">'Hang up and independently verify via government channels.'</span><span class="p">,</span>
     <span class="s1">'M59-8'</span><span class="p">:</span> <span class="s1">'Check his credit report with an official bureau and contact the bank.'</span><span class="p">,</span>
-    <span class="s1">'M59-9'</span><span class="p">:</span> <span class="s1">'Research independently using official sources/regulators before considering investment.'</span><span class="p">,</span>
-    <span class="s1">'M59-10'</span><span class="p">:</span> <span class="s1">'Visit the official website or bank branch to check his KYC status.'</span><span class="p">,</span>
+    <span class="s1">'M59-9'</span><span class="p">:</span> <span class="s1">'Take some time to find out more about the start-up on his own, checking what’s publicly available, before choosing whether to invest.'</span><span class="p">,</span>
+    <span class="s1">'M59-10'</span><span class="p">:</span> <span class="s1">'Check his KYC status using the bank’s app or by logging in the usual way, without using the link in the email.'</span><span class="p">,</span>
     
-    <span class="s1">'M59-11'</span><span class="p">:</span> <span class="s2">"Check his account via the bank’s official app or helpline."</span><span class="p">,</span>
-    <span class="s1">'M59-12'</span><span class="p">:</span> <span class="s1">'Change his email password and activate two-factor authentication.'</span><span class="p">,</span>
-    <span class="s1">'M59-13'</span><span class="p">:</span> <span class="s1">'Refuse the request, hang up, and verify with the bank.'</span><span class="p">,</span>
+    <span class="s1">'M59-11'</span><span class="p">:</span> <span class="s2">"Open his bank’s app or log in through his usual method to see if there are any actual alerts about his account, rather than using the link in the message."</span><span class="p">,</span>
+    <span class="s1">'M59-12'</span><span class="p">:</span> <span class="s1">'Go into his account settings to change his password, add two-factor authentication, and make sure nobody else can access his email.'</span><span class="p">,</span>
+    <span class="s1">'M59-13'</span><span class="p">:</span> <span class="s1">'Tell the caller he’ll think about it and first check with his bank the usual way, instead of installing anything right away.'</span><span class="p">,</span>
     <span class="s1">'M59-14'</span><span class="p">:</span> <span class="s1">'Regain access through the account recovery process and inform contacts.'</span><span class="p">,</span>
-    <span class="s1">'M59-15'</span><span class="p">:</span> <span class="s1">'Save evidence, secure all accounts, and seek support to report the breach.'</span><span class="p">,</span>
+    <span class="s1">'M59-15'</span><span class="p">:</span> <span class="s1">'Save any evidence of what happened, review and tighten the security on his accounts, and look for help reporting the breach.'</span><span class="p">,</span>
     
-    <span class="s1">'M59-16'</span><span class="p">:</span> <span class="s1">'Have a direct but respectful conversation with his supervisor or HR to discuss the situation.'</span><span class="p">,</span>
+    <span class="s1">'M59-16'</span><span class="p">:</span> <span class="s1">'Arrange to talk privately with his supervisor or someone in HR, and respectfully ask about the changes and exclusions to understand what’s behind them.'</span><span class="p">,</span>
     <span class="s1">'M59-17'</span><span class="p">:</span> <span class="s1">'Save the posts and reach out to a society committee member for help.'</span><span class="p">,</span>
-    <span class="s1">'M59-18'</span><span class="p">:</span> <span class="s1">'Contact a trusted friend or relative for advice and support.'</span><span class="p">,</span>
+    <span class="s1">'M59-18'</span><span class="p">:</span> <span class="s1">'Contact a trusted friend or relative and explore together possible ways to reconnect.'</span><span class="p">,</span>
     <span class="s1">'M59-19'</span><span class="p">:</span> <span class="s1">'Clearly state his limitations and seek shared responsibility from family members.'</span><span class="p">,</span>
     <span class="s1">'M59-20'</span><span class="p">:</span> <span class="s1">'Approach his friend in a kind and genuine manner to ask about the situation.'</span><span class="p">,</span>
 
     
     <span class="s1">'M60-1'</span><span class="p">:</span> <span class="s1">'Take aspirin and seek help immediately.'</span><span class="p">,</span>
-    <span class="s1">'M60-2'</span><span class="p">:</span> <span class="s1">'Use allergy medication and have someone call emergency services.'</span><span class="p">,</span>
-    <span class="s1">'M60-3'</span><span class="p">:</span> <span class="s1">'Immediately call emergency medical services.'</span><span class="p">,</span>
+    <span class="s1">'M60-2'</span><span class="p">:</span> <span class="s1">'Take his allergy medicine if he has it, and ask someone nearby to get urgent medical help instead of waiting to see if it improves.'</span><span class="p">,</span>
+    <span class="s1">'M60-3'</span><span class="p">:</span> <span class="s1">'Try to call for medical help right away and explain what’s happening as best he can, rather than waiting alone.'</span><span class="p">,</span>
     <span class="s1">'M60-4'</span><span class="p">:</span> <span class="s1">'Apply pressure and elevate the hand, then get help.'</span><span class="p">,</span>
-    <span class="s1">'M60-5'</span><span class="p">:</span> <span class="s1">'Sit, request something sugary, and alert others.'</span><span class="p">,</span>
+    <span class="s1">'M60-5'</span><span class="p">:</span> <span class="s1">'Sit down right away, ask someone nearby if they have anything sweet he can eat, and mention that he’s not feeling well so he can get help if needed.'</span><span class="p">,</span>
 
-    <span class="s1">'M60-6'</span><span class="p">:</span> <span class="s1">'Call the official bank helpline to freeze his account and report the issue.'</span><span class="p">,</span>
-    <span class="s1">'M60-7'</span><span class="p">:</span> <span class="s1">'Hang up and verify directly with the Income Tax Department.'</span><span class="p">,</span>
+    <span class="s1">'M60-6'</span><span class="p">:</span> <span class="s1">'Call his bank’s helpline right away to talk about what’s happening and find out how to stop further transactions.'</span><span class="p">,</span>
+    <span class="s1">'M60-7'</span><span class="p">:</span> <span class="s1">'Hang up and call the Income Tax Department on the number he normally uses, just to make sure the request from the caller is actually genuine.'</span><span class="p">,</span>
     <span class="s1">'M60-8'</span><span class="p">:</span> <span class="s1">'Contact the concerned bank and credit bureau to report the issue.'</span><span class="p">,</span>
     <span class="s1">'M60-9'</span><span class="p">:</span> <span class="s1">'Decline and independently research the investment scheme.'</span><span class="p">,</span>
-    <span class="s1">'M60-10'</span><span class="p">:</span> <span class="s1">'Confirm with his bank in person or via the official website.'</span><span class="p">,</span>
+    <span class="s1">'M60-10'</span><span class="p">:</span> <span class="s1">'Get in touch with his bank using the official website or stop by in person to ask if the alert is genuine before taking any action.'</span><span class="p">,</span>
 
-    <span class="s1">'M60-11'</span><span class="p">:</span> <span class="s1">'Check through the official bank app or in person.'</span><span class="p">,</span>
+    <span class="s1">'M60-11'</span><span class="p">:</span> <span class="s1">'Log in using the bank’s app he usually uses, or wait to ask someone at his branch about the alert.'</span><span class="p">,</span>
     <span class="s1">'M60-12'</span><span class="p">:</span> <span class="s1">'Change his password and set up two-factor authentication.'</span><span class="p">,</span>
     <span class="s1">'M60-13'</span><span class="p">:</span> <span class="s1">'Refuse, disconnect, and verify with his bank directly.'</span><span class="p">,</span>
-    <span class="s1">'M60-14'</span><span class="p">:</span> <span class="s1">'Regain access through account recovery process and alert contacts.'</span><span class="p">,</span>
-    <span class="s1">'M60-15'</span><span class="p">:</span> <span class="s1">'Collect evidence, secure accounts, and enlist trusted help for reporting.'</span><span class="p">,</span>
+    <span class="s1">'M60-14'</span><span class="p">:</span> <span class="s1">'Try to recover his account using the recovery process, and let his contacts know so they’re aware something unusual is happening.'</span><span class="p">,</span>
+    <span class="s1">'M60-15'</span><span class="p">:</span> <span class="s1">'Gather any evidence of what’s happened, review the security of his accounts, and ask someone he trusts to help him report what’s going on.'</span><span class="p">,</span>
 
     <span class="s1">'M60-16'</span><span class="p">:</span> <span class="s1">'Contact a trusted friend or community group to reconnect socially.'</span><span class="p">,</span>
-    <span class="s1">'M60-17'</span><span class="p">:</span> <span class="s1">'Calmly ask a trusted neighbor or official for their perspective and, if necessary, address the matter privately.'</span><span class="p">,</span>
+    <span class="s1">'M60-17'</span><span class="p">:</span> <span class="s1">'Speak one-on-one with a trusted neighbor or a society official to get their honest perspective and, if needed, clear up any misunderstandings in private.'</span><span class="p">,</span>
     <span class="s1">'M60-18'</span><span class="p">:</span> <span class="s1">'Open a conversation with a family member he trusts to seek understanding and resolution.'</span><span class="p">,</span>
     <span class="s1">'M60-19'</span><span class="p">:</span> <span class="s2">"Tell his family honestly that he needs help and identify specific support he’d appreciate."</span><span class="p">,</span>
     <span class="s1">'M60-20'</span><span class="p">:</span> <span class="s1">'Ask a friendly neighbor in a polite, non-confrontational way if he missed an invite.'</span><span class="p">,</span>
@@ -7640,43 +7640,43 @@ a.anchor-link {
     <span class="s1">'W25-1'</span><span class="p">:</span> <span class="s1">'Call for help from hostel staff or friends, and get to a campus clinic or similar immediately.'</span><span class="p">,</span>
     <span class="s1">'W25-2'</span><span class="p">:</span> <span class="s1">'Use her allergy medication (if available) and seek emergency help immediately.'</span><span class="p">,</span>
     <span class="s1">'W25-3'</span><span class="p">:</span> <span class="s1">'Call for the emergency'</span><span class="p">,</span>
-    <span class="s1">'W25-4'</span><span class="p">:</span> <span class="s1">'Apply pressure, clean the wound, and go to a clinic.'</span><span class="p">,</span>
-    <span class="s1">'W25-5'</span><span class="p">:</span> <span class="s1">'Stop, sit up, slow her breathing, and call for help.'</span><span class="p">,</span>
+    <span class="s1">'W25-4'</span><span class="p">:</span> <span class="s1">'Clean the wound, press to stop the bleeding, and get someone to take her to a clinic.'</span><span class="p">,</span>
+    <span class="s1">'W25-5'</span><span class="p">:</span> <span class="s1">'Sit down and focus on slowing her breathing, then look for a way to get help, rather than continuing her run.'</span><span class="p">,</span>
 
-    <span class="s1">'W25-6'</span><span class="p">:</span> <span class="s1">'Block her card and report to the bank immediately via app/helpline.'</span><span class="p">,</span>
+    <span class="s1">'W25-6'</span><span class="p">:</span> <span class="s1">'Use her banking app or call the helpline right away to block her card and inform the bank about what’s happened.'</span><span class="p">,</span>
     <span class="s1">'W25-7'</span><span class="p">:</span> <span class="s1">'Hang up, then verify the demand with official government contacts.'</span><span class="p">,</span>
-    <span class="s1">'W25-8'</span><span class="p">:</span> <span class="s1">'Report identity theft to the bank and credit bureau.'</span><span class="p">,</span>
-    <span class="s1">'W25-9'</span><span class="p">:</span> <span class="s1">'Research the investment through official sources or regulators'</span><span class="p">,</span>
+    <span class="s1">'W25-8'</span><span class="p">:</span> <span class="s1">'Contact her bank and the credit bureau as soon as possible to report the problem and ask what steps she should take.'</span><span class="p">,</span>
+    <span class="s1">'W25-9'</span><span class="p">:</span> <span class="s1">'Look up details about the scheme using official sites or check what financial regulators say before deciding what to do next.'</span><span class="p">,</span>
     <span class="s1">'W25-10'</span><span class="p">:</span> <span class="s1">'Do not open the PDF; verify independently using her bank app or statement.'</span><span class="p">,</span>
 
-    <span class="s1">'W25-11'</span><span class="p">:</span> <span class="s2">"Don't click the link; verify from the app and enable security features."</span><span class="p">,</span>
-    <span class="s1">'W25-12'</span><span class="p">:</span> <span class="s1">'Block UPI and disable transactions immediately'</span><span class="p">,</span>
-    <span class="s1">'W25-13'</span><span class="p">:</span> <span class="s1">'Refuse, disconnect, and verify with the official app helpline.'</span><span class="p">,</span>
-    <span class="s1">'W25-14'</span><span class="p">:</span> <span class="s1">'Immediately change her password and activate security settings.'</span><span class="p">,</span>
+    <span class="s1">'W25-11'</span><span class="p">:</span> <span class="s2">"Skip clicking the link, open her Instagram app directly to check for any issues, and consider updating her account’s security settings."</span><span class="p">,</span>
+    <span class="s1">'W25-12'</span><span class="p">:</span> <span class="s1">'Use her banking app to block UPI transactions right away and let her bank know what’s happened.'</span><span class="p">,</span>
+    <span class="s1">'W25-13'</span><span class="p">:</span> <span class="s1">'Say no to sharing her OTP, end the call, and check with the actual wallet app’s helpline to see if there really is a problem.'</span><span class="p">,</span>
+    <span class="s1">'W25-14'</span><span class="p">:</span> <span class="s1">'Go into her email account, update her password and add some extra security options.'</span><span class="p">,</span>
     <span class="s1">'W25-15'</span><span class="p">:</span> <span class="s1">'Save evidence and alert someone she trusts while preparing to report.'</span><span class="p">,</span>
 
     <span class="s1">'W25-16'</span><span class="p">:</span> <span class="s2">"Save screenshots as evidence and approach a counselor or a trusted adult for help."</span><span class="p">,</span>
     <span class="s1">'W25-17'</span><span class="p">:</span> <span class="s1">'Have a calm one-on-one conversation with her roommate or talk to the hostel warden.'</span><span class="p">,</span>
-    <span class="s1">'W25-18'</span><span class="p">:</span> <span class="s1">'Firmly tell the group she’s not interested and, if needed, leave the situation.'</span><span class="p">,</span>
-    <span class="s1">'W25-19'</span><span class="p">:</span> <span class="s1">'Save the messages and reach out to student support or university authorities for help.'</span><span class="p">,</span>
+    <span class="s1">'W25-18'</span><span class="p">:</span> <span class="s1">'Say clearly that she doesn’t want to drink and, if things feel too uncomfortable, move away from the group for a bit.'</span><span class="p">,</span>
+    <span class="s1">'W25-19'</span><span class="p">:</span> <span class="s1">'Keep the messages as evidence and reach out to the student support office or someone at the university who can help.'</span><span class="p">,</span>
     <span class="s1">'W25-20'</span><span class="p">:</span> <span class="s1">'Speak with a counselor or someone she trusts about feeling left out and work through her emotions.'</span><span class="p">,</span>
 
 
 
 
-    <span class="s1">'W59-1'</span><span class="p">:</span> <span class="s1">'Take an aspirin and call for help/emergency services immediately.'</span><span class="p">,</span>
-    <span class="s1">'W59-2'</span><span class="p">:</span> <span class="s1">'Use her emergency allergy medication and call for medical help.'</span><span class="p">,</span>
+    <span class="s1">'W59-1'</span><span class="p">:</span> <span class="s1">'Take an aspirin if it’s available, call for help, and let someone know about her symptoms.'</span><span class="p">,</span>
+    <span class="s1">'W59-2'</span><span class="p">:</span> <span class="s1">'Take her allergy medicine if she has it, and get someone to call for medical help right away.'</span><span class="p">,</span>
     <span class="s1">'W59-3'</span><span class="p">:</span> <span class="s1">'Call emergency medical services at once.'</span><span class="p">,</span>
     <span class="s1">'W59-4'</span><span class="p">:</span> <span class="s1">'Apply direct pressure, elevate hand and call for help.'</span><span class="p">,</span>
-    <span class="s1">'W59-5'</span><span class="p">:</span> <span class="s1">'Sit, ask someone for sugar, and alert for help.'</span><span class="p">,</span>
+    <span class="s1">'W59-5'</span><span class="p">:</span> <span class="s1">'Sit down, ask someone nearby for something sweet, and let them know she’s not feeling well.'</span><span class="p">,</span>
 
-    <span class="s1">'W59-6'</span><span class="p">:</span> <span class="s1">'Block her card and report the transactions to the bank immediately.'</span><span class="p">,</span>
+    <span class="s1">'W59-6'</span><span class="p">:</span> <span class="s1">'Use her bank’s app or call to block the card as soon as possible and tell the bank about the charges.'</span><span class="p">,</span>
     <span class="s1">'W59-7'</span><span class="p">:</span> <span class="s1">'Hang up and independently contact the Income Tax Department.'</span><span class="p">,</span>
     <span class="s1">'W59-8'</span><span class="p">:</span> <span class="s1">'Check her credit report through official channels and alert her bank.'</span><span class="p">,</span>
-    <span class="s1">'W59-9'</span><span class="p">:</span> <span class="s1">'Research the scheme independently using official sources.'</span><span class="p">,</span>
-    <span class="s1">'W59-10'</span><span class="p">:</span> <span class="s1">'Visit her bank’s official website or branch to check the KYC status.'</span><span class="p">,</span>
+    <span class="s1">'W59-9'</span><span class="p">:</span> <span class="s1">'Look up information about the scheme herself and see what she can find from reliable sites before making a decision.'</span><span class="p">,</span>
+    <span class="s1">'W59-10'</span><span class="p">:</span> <span class="s1">'Use her bank’s app or visit the branch to see if her KYC is actually pending before responding to the email.'</span><span class="p">,</span>
     
-    <span class="s1">'W59-11'</span><span class="p">:</span> <span class="s1">'Ignore the link, check through the official app or website.'</span><span class="p">,</span>
+    <span class="s1">'W59-11'</span><span class="p">:</span> <span class="s1">'Skip the link and log in with her usual banking app or website to check if there’s a real issue.'</span><span class="p">,</span>
     <span class="s1">'W59-12'</span><span class="p">:</span> <span class="s1">'Change her password and turn on two-factor authentication.'</span><span class="p">,</span>
     <span class="s1">'W59-13'</span><span class="p">:</span> <span class="s1">'Refuse and verify with official IT support.'</span><span class="p">,</span>
     <span class="s1">'W59-14'</span><span class="p">:</span> <span class="s1">'Change her password and secure her account.'</span><span class="p">,</span>
@@ -7685,30 +7685,30 @@ a.anchor-link {
     <span class="s1">'W59-16'</span><span class="p">:</span> <span class="s1">'Reach out directly to her supervisor or HR to discuss her concerns.'</span><span class="p">,</span>
     <span class="s1">'W59-17'</span><span class="p">:</span> <span class="s1">'Save the hurtful messages as evidence and request intervention from building management.'</span><span class="p">,</span>
     <span class="s1">'W59-18'</span><span class="p">:</span> <span class="s1">'Reach out to a trusted friend or counselor and share her feelings honestly.'</span><span class="p">,</span>
-    <span class="s1">'W59-19'</span><span class="p">:</span> <span class="s1">'Talk openly and respectfully with her in-laws about boundaries and shared responsibilities.'</span><span class="p">,</span>
+    <span class="s1">'W59-19'</span><span class="p">:</span> <span class="s1">'Talk honestly and respectfully with her in-laws about boundaries and shared responsibilities.'</span><span class="p">,</span>
     <span class="s1">'W59-20'</span><span class="p">:</span> <span class="s1">'Privately and calmly seek clarification, possibly requesting mediation.'</span><span class="p">,</span>
 
 
-    <span class="s1">'W60-1'</span><span class="p">:</span> <span class="s1">'Chew aspirin and call for help immediately.'</span><span class="p">,</span>
+    <span class="s1">'W60-1'</span><span class="p">:</span> <span class="s1">'Take an aspirin if she has one, call for help straight away, and let someone know what she’s feeling.'</span><span class="p">,</span>
     <span class="s1">'W60-2'</span><span class="p">:</span> <span class="s1">'Stay still and shout for assistance.'</span><span class="p">,</span>
     <span class="s1">'W60-3'</span><span class="p">:</span> <span class="s1">'Stop reading, call for help, and get to the hospital.'</span><span class="p">,</span>
-    <span class="s1">'W60-4'</span><span class="p">:</span> <span class="s1">'Sit, stay safe, and call for help immediately.'</span><span class="p">,</span>
-    <span class="s1">'W60-5'</span><span class="p">:</span> <span class="s1">'Call the pharmacy and verify the pills.'</span><span class="p">,</span>
+    <span class="s1">'W60-4'</span><span class="p">:</span> <span class="s1">'Move to a safe spot, let a nearby neighbor know she’s confused, and ask for help getting checked by a doctor.'</span><span class="p">,</span>
+    <span class="s1">'W60-5'</span><span class="p">:</span> <span class="s1">'Pause before taking the pills, call the pharmacy to explain what she’s noticed, and ask if there’s been any change to her prescription.'</span><span class="p">,</span>
 
-    <span class="s1">'W60-6'</span><span class="p">:</span> <span class="s1">'Immediately call the official bank helpline to report and freeze her account.'</span><span class="p">,</span>
+    <span class="s1">'W60-6'</span><span class="p">:</span> <span class="s1">'Call the bank’s customer service line right away to report the missing money and freeze her account.'</span><span class="p">,</span>
     <span class="s1">'W60-7'</span><span class="p">:</span> <span class="s1">'Hang up, then call her bank using the number listed on her bank documents.'</span><span class="p">,</span>
-    <span class="s1">'W60-8'</span><span class="p">:</span> <span class="s1">'Request a formal Fraud Alert on her credit profile through her bank.'</span><span class="p">,</span>
-    <span class="s1">'W60-9'</span><span class="p">:</span> <span class="s1">'Refuse politely and research the chit fund through official channels.'</span><span class="p">,</span>
-    <span class="s1">'W60-10'</span><span class="p">:</span> <span class="s1">'Visit her bank’s official website or branch to clarify.'</span><span class="p">,</span>
+    <span class="s1">'W60-8'</span><span class="p">:</span> <span class="s1">'Contact her bank or credit service to ask about placing a fraud alert on her credit profile.'</span><span class="p">,</span>
+    <span class="s1">'W60-9'</span><span class="p">:</span> <span class="s1">'Decide to find out more about the chit fund through independent sources before making any choice.'</span><span class="p">,</span>
+    <span class="s1">'W60-10'</span><span class="p">:</span> <span class="s1">'Check her fixed deposit status by logging into her usual banking app or visiting her bank.'</span><span class="p">,</span>
 
     <span class="s1">'W60-11'</span><span class="p">:</span> <span class="s1">'Verify with someone she trusts and ignore the suspicious message.'</span><span class="p">,</span>
     <span class="s1">'W60-12'</span><span class="p">:</span> <span class="s1">'Ask a trusted family member or neighbor for help reading the instructions.'</span><span class="p">,</span>
     <span class="s1">'W60-13'</span><span class="p">:</span> <span class="s1">'Refuse and independently verify with someone she knows.'</span><span class="p">,</span>
-    <span class="s1">'W60-14'</span><span class="p">:</span> <span class="s1">'Set the phone to airplane mode and seek help to check for malware.'</span><span class="p">,</span>
+    <span class="s1">'W60-14'</span><span class="p">:</span> <span class="s1">'Set the phone to airplane mode and seek help to check for malware or unwanted apps.'</span><span class="p">,</span>
     <span class="s1">'W60-15'</span><span class="p">:</span> <span class="s1">'Change her password and secure the account.'</span><span class="p">,</span>
     
     <span class="s1">'W60-16'</span><span class="p">:</span> <span class="s1">'Reach out to someone she trusts and share how she’s feeling.'</span><span class="p">,</span>
-    <span class="s1">'W60-17'</span><span class="p">:</span> <span class="s1">'Seek clarification from a trusted member or speak privately to address the rumors.'</span><span class="p">,</span>
+    <span class="s1">'W60-17'</span><span class="p">:</span> <span class="s1">'Talk privately with someone she trusts in the group to clear things up or address what she’s heard.'</span><span class="p">,</span>
     <span class="s1">'W60-18'</span><span class="p">:</span> <span class="s1">'Reflect for a while and then gently bring up her feelings with a family member.'</span><span class="p">,</span>
     <span class="s1">'W60-19'</span><span class="p">:</span> <span class="s1">'Let her family know about her concerns and clearly request specific help where needed.'</span><span class="p">,</span>
     <span class="s1">'W60-20'</span><span class="p">:</span> <span class="s1">'Gently ask a trusted neighbor if there was a reason she was left out.'</span><span class="p">,</span>
@@ -7736,22 +7736,31 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># importing</span>
-<span class="n">import_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"../../data_cleaned/india/dynata_pilot/"</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">import_path</span><span class="si">}</span><span class="s2">/DynataScenarioPiloting_August 20.csv"</span><span class="p">)</span>
+<span class="n">import_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"../../data_cleaned/india/dynata_pilot 2/"</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">import_path</span><span class="si">}</span><span class="s2">/DynataScenarioPiloting_August 29.csv"</span><span class="p">)</span>
 
 <span class="n">questions_df</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># removing samples from pilot 1</span>
+<span class="n">data</span><span class="p">[</span><span class="s2">"StartDate"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s2">"StartDate"</span><span class="p">],</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">"%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S"</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="s2">"StartDate"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="s2">"2025-08-27"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
 <span class="n">data</span><span class="p">[</span><span class="s2">"Q2"</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"Q2"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">raw_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># scoring</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Following questions have no correct answers in the demographic:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">scenarios_answers_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="mi">1</span><span class="p">,</span>
+                         <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()),</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">0</span>
+                                  <span class="p">)</span>
+                        <span class="p">)</span>
     <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: sum = </span><span class="si">{</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s2">, count = </span><span class="si">{</span><span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
@@ -7771,7 +7780,7 @@ a.anchor-link {
 
 <span class="n">output_col</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"ResponseId"</span><span class="p">,</span> <span class="s2">"Q1"</span><span class="p">,</span> <span class="s2">"Q2"</span><span class="p">,</span> <span class="s2">"Q3"</span><span class="p">,</span> <span class="s2">"Q4a"</span><span class="p">]</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">scenarios_answers_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">output_col</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">output</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"dynata_pilot_cleaned_200825.xlsx"</span><span class="p">)</span>
+<span class="n">output</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"dynata_pilot_2_cleaned_300825.xlsx"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7785,9 +7794,8 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Following questions have no correct answers in the demographic:
-M60-20: sum = 0, count = 189
 
-Post removing &lt;0.5 median time responses: 112
+Post removing &lt;0.5 median time responses: 144
 </pre>
 </div>
 </div>
@@ -7798,7 +7806,7 @@ Post removing &lt;0.5 median time responses: 112
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">scenarios_questions_dict</span> <span class="o">=</span> <span class="p">{}</span>
@@ -7814,7 +7822,7 @@ Post removing &lt;0.5 median time responses: 112
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sample_prep</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
@@ -7855,12 +7863,12 @@ Post removing &lt;0.5 median time responses: 112
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Demographics</span>
-<span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">}:</span>
-    <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">25</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">}:</span>
+<span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">]:</span>
         <span class="n">sex2</span> <span class="o">=</span> <span class="s2">"Male"</span> <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="s2">"M"</span> <span class="k">else</span> <span class="s2">"Female"</span>
         <span class="k">if</span> <span class="n">age</span> <span class="o">==</span> <span class="mi">25</span><span class="p">:</span>
             <span class="n">age2</span> <span class="o">=</span> <span class="s2">"18-25"</span>
@@ -7882,12 +7890,12 @@ Post removing &lt;0.5 median time responses: 112
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Female  18-25  : 17
+<pre>Male    18-25  : 23
+Male    26-59  : 27
+Male    60+    : 25
+Female  18-25  : 26
 Female  26-59  : 23
-Female  60+    : 5
-Male    18-25  : 25
-Male    26-59  : 29
-Male    60+    : 13
+Female  60+    : 20
 </pre>
 </div>
 </div>
@@ -7909,7 +7917,7 @@ Male    60+    : 13
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">]:</span>
@@ -7938,148 +7946,695 @@ Male    60+    : 13
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
 
-Male    18-25  : count: 25
-M25-1:0.8
-M25-2:0.76
-M25-3:0.52
-M25-4:0.84
-M25-5:0.88
-M25-6:0.76
-M25-7:0.76
-M25-8:0.76
-M25-9:0.68
-M25-10:0.52
-M25-11:0.68
-M25-12:0.48
-M25-13:0.72
-M25-14:0.88
-M25-15:0.48
-M25-16:0.76
-M25-17:0.84
-M25-18:0.64
-M25-19:0.6
-M25-20:0.6
+Male    18-25  : count: 23
+M25-1:0.6666666666666666
+M25-2:1.0
+M25-3:0.5
+M25-4:0.8095238095238095
+M25-5:0.95
+M25-6:0.7727272727272727
+M25-7:0.9130434782608695
+M25-8:0.65
+M25-9:0.65
+M25-10:0.5714285714285714
+M25-11:0.7619047619047619
+M25-12:0.4090909090909091
+M25-13:0.5238095238095238
+M25-14:0.8
+M25-15:0.6190476190476191
+M25-16:0.7619047619047619
+M25-17:0.6666666666666666
+M25-18:0.47619047619047616
+M25-19:0.6666666666666666
+M25-20:0.7
 
 
-Male    26-59  : count: 29
-M59-1:0.9655172413793104
-M59-2:1.0
-M59-3:0.7586206896551724
-M59-4:0.896551724137931
-M59-5:0.9310344827586207
-M59-6:0.896551724137931
-M59-7:0.5862068965517241
-M59-8:0.6551724137931034
-M59-9:0.8620689655172413
-M59-10:1.0
-M59-11:0.8620689655172413
-M59-12:0.8620689655172413
-M59-13:0.896551724137931
-M59-14:0.3103448275862069
-M59-15:0.7241379310344828
-M59-16:0.8275862068965517
-M59-17:0.6551724137931034
-M59-18:0.2413793103448276
-M59-19:0.4482758620689655
-M59-20:0.4827586206896552
+Male    26-59  : count: 27
+M59-1:0.7916666666666666
+M59-2:0.84
+M59-3:0.7692307692307693
+M59-4:0.6956521739130435
+M59-5:0.8076923076923077
+M59-6:0.9130434782608695
+M59-7:0.6086956521739131
+M59-8:0.7307692307692307
+M59-9:0.68
+M59-10:0.8260869565217391
+M59-11:0.88
+M59-12:0.8846153846153846
+M59-13:0.625
+M59-14:0.4230769230769231
+M59-15:0.7307692307692307
+M59-16:0.75
+M59-17:0.5833333333333334
+M59-18:0.6
+M59-19:0.52
+M59-20:0.6538461538461539
 
 
-Male    60+    : count: 13
-M60-1:0.6153846153846154
-M60-2:0.8461538461538461
-M60-3:0.6923076923076923
-M60-4:0.5384615384615384
-M60-5:0.9230769230769231
-M60-6:0.8461538461538461
-M60-7:0.9230769230769231
-M60-8:0.5384615384615384
-M60-9:0.6153846153846154
-M60-10:0.8461538461538461
-M60-11:0.6923076923076923
-M60-12:0.6153846153846154
-M60-13:0.6153846153846154
-M60-14:0.7692307692307693
-M60-15:0.6923076923076923
-M60-16:0.23076923076923078
-M60-17:0.6923076923076923
-M60-18:0.6153846153846154
-M60-19:0.46153846153846156
-M60-20:0.0
+Male    60+    : count: 25
+M60-1:0.9565217391304348
+M60-2:0.9166666666666666
+M60-3:0.7727272727272727
+M60-4:0.782608695652174
+M60-5:1.0
+M60-6:1.0
+M60-7:0.75
+M60-8:0.875
+M60-9:0.782608695652174
+M60-10:0.8333333333333334
+M60-11:0.7391304347826086
+M60-12:0.9090909090909091
+M60-13:0.782608695652174
+M60-14:0.7916666666666666
+M60-15:0.6363636363636364
+M60-16:0.4782608695652174
+M60-17:0.64
+M60-18:0.6956521739130435
+M60-19:0.8636363636363636
+M60-20:0.6666666666666666
 
 
-Female  18-25  : count: 17
-W25-1:0.5882352941176471
-W25-2:0.6470588235294118
-W25-3:0.5294117647058824
-W25-4:0.8235294117647058
-W25-5:0.8235294117647058
-W25-6:0.7058823529411765
-W25-7:0.6470588235294118
-W25-8:0.7647058823529411
-W25-9:0.7647058823529411
-W25-10:0.6470588235294118
-W25-11:0.7647058823529411
-W25-12:0.7058823529411765
-W25-13:0.7647058823529411
-W25-14:0.8235294117647058
-W25-15:0.47058823529411764
-W25-16:0.6470588235294118
-W25-17:0.5882352941176471
-W25-18:0.7058823529411765
-W25-19:0.8235294117647058
-W25-20:0.47058823529411764
+Female  18-25  : count: 26
+W25-1:0.6923076923076923
+W25-2:0.56
+W25-3:0.56
+W25-4:0.7916666666666666
+W25-5:0.76
+W25-6:0.75
+W25-7:0.9130434782608695
+W25-8:0.92
+W25-9:0.7916666666666666
+W25-10:0.88
+W25-11:0.72
+W25-12:0.84
+W25-13:1.0
+W25-14:0.7391304347826086
+W25-15:0.8333333333333334
+W25-16:0.92
+W25-17:0.875
+W25-18:0.8636363636363636
+W25-19:0.8461538461538461
+W25-20:0.5909090909090909
 
 
 Female  26-59  : count: 23
-W59-1:0.782608695652174
-W59-2:0.9130434782608695
-W59-3:0.8260869565217391
-W59-4:0.6521739130434783
-W59-5:0.8260869565217391
-W59-6:0.8260869565217391
-W59-7:0.43478260869565216
-W59-8:0.5217391304347826
-W59-9:0.7391304347826086
-W59-10:0.8260869565217391
-W59-11:0.7391304347826086
-W59-12:0.782608695652174
-W59-13:0.6521739130434783
-W59-14:0.5217391304347826
-W59-15:0.6521739130434783
-W59-16:0.5217391304347826
-W59-17:0.5217391304347826
-W59-18:0.5652173913043478
-W59-19:0.30434782608695654
-W59-20:0.30434782608695654
+W59-1:0.7727272727272727
+W59-2:0.8095238095238095
+W59-3:0.9090909090909091
+W59-4:0.5909090909090909
+W59-5:0.6818181818181818
+W59-6:0.7619047619047619
+W59-7:0.5217391304347826
+W59-8:0.5
+W59-9:0.6666666666666666
+W59-10:0.7727272727272727
+W59-11:0.6666666666666666
+W59-12:0.6818181818181818
+W59-13:0.5714285714285714
+W59-14:0.782608695652174
+W59-15:0.8571428571428571
+W59-16:0.6666666666666666
+W59-17:0.5714285714285714
+W59-18:0.7142857142857143
+W59-19:0.7142857142857143
+W59-20:0.19047619047619047
 
 
-Female  60+    : count: 5
+Female  60+    : count: 20
 W60-1:0.8
-W60-2:0.6
-W60-3:0.6
-W60-4:1.0
-W60-5:1.0
-W60-6:1.0
-W60-7:0.6
-W60-8:0.8
-W60-9:1.0
-W60-10:1.0
-W60-11:0.4
-W60-12:0.6
-W60-13:0.4
-W60-14:0.2
+W60-2:0.7
+W60-3:0.9
+W60-4:0.8
+W60-5:0.85
+W60-6:0.9
+W60-7:0.7
+W60-8:0.85
+W60-9:0.65
+W60-10:0.8
+W60-11:0.7
+W60-12:0.85
+W60-13:0.55
+W60-14:0.3
 W60-15:0.6
-W60-16:0.6
-W60-17:0.8
-W60-18:0.4
-W60-19:0.6
-W60-20:0.4
+W60-16:0.25
+W60-17:0.3
+W60-18:0.45
+W60-19:0.35
+W60-20:0.45
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=62d7b86c">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=643840e7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%3C=-0.2-Question-analysis">&lt;= 0.2 Question analysis<a class="anchor-link" href="#%3C=-0.2-Question-analysis">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d5f2f867">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">low_answer_rate_questions</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">low_score_questions_set</span><span class="p">):</span>
+
+    <span class="n">sample</span> <span class="o">=</span> <span class="n">sample_prep</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sex</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">}:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"sex not applicable, input one of 'M' or 'W'"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">25</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">}:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"age not applicable, input one of 25, 59, 60"</span><span class="p">)</span>
+
+    <span class="n">col_prefix</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sex</span><span class="si">}{</span><span class="n">age</span><span class="si">}</span><span class="s2">-"</span>
+    <span class="n">focal_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">col_prefix</span><span class="p">)]</span>
+    
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">focal_columns</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sample</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">sample</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mf">0.2</span><span class="p">:</span>
+            <span class="n">low_score_questions_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=94bc0be6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">low_scoring_questions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">]:</span>
+        <span class="n">sex2</span> <span class="o">=</span> <span class="s2">"Male"</span> <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="s2">"M"</span> <span class="k">else</span> <span class="s2">"Female"</span>
+        <span class="k">if</span> <span class="n">age</span> <span class="o">==</span> <span class="mi">25</span><span class="p">:</span>
+            <span class="n">age2</span> <span class="o">=</span> <span class="s2">"18-25"</span>
+        <span class="k">elif</span> <span class="n">age</span> <span class="o">==</span> <span class="mi">59</span><span class="p">:</span>
+            <span class="n">age2</span> <span class="o">=</span> <span class="s2">"26-59"</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">age2</span> <span class="o">=</span> <span class="s2">"60+"</span>
+
+        <span class="n">low_answer_rate_questions</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">low_scoring_questions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7096d8be">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">low_scoring_questions</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>{'W59-20'}</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1a67726d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">low_scoring_questions</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="si">{</span><span class="n">raw_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">scenarios_questions_dict</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="n">scenarios_answers_dict</span><span class="p">[</span><span class="n">col</span><span class="p">]:</span><span class="w"> </span><span class="sa">f</span><span class="s1">'Correct: </span><span class="si">{</span><span class="n">scenarios_answers_dict</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">})</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+W59-20: Rupa, 48, sees her reputation damaged by a colleague’s false rumors at her cooperative society. She feels humiliated but is unsure whether to address it.\r\n\r\nWhat is the best response Rupa should do?
+Privately approach the colleague to clarify concerns and enforce a positive outcome.    18
+Correct: Privately and calmly seek clarification, possibly requesting mediation.         4
+Wait to see if the issue dies down before taking action.                                 1
+Name: count, dtype: int64
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4c6404ba">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b59f7fce">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%3E=-0.8-Question-analysis">&gt;= 0.8 Question analysis<a class="anchor-link" href="#%3E=-0.8-Question-analysis">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7254b7cc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">high_answer_rate_questions</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">high_score_questions_set</span><span class="p">):</span>
+
+    <span class="n">sample</span> <span class="o">=</span> <span class="n">sample_prep</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">sex</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">}:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"sex not applicable, input one of 'M' or 'W'"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">25</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">}:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"age not applicable, input one of 25, 59, 60"</span><span class="p">)</span>
+
+    <span class="n">col_prefix</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">sex</span><span class="si">}{</span><span class="n">age</span><span class="si">}</span><span class="s2">-"</span>
+    <span class="n">focal_columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sample</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">col_prefix</span><span class="p">)]</span>
+    
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">focal_columns</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">sample</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">sample</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">0.8</span><span class="p">:</span>
+            <span class="n">high_score_questions_set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d8bbc9ef">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">high_scoring_questions</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">sex</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"M"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">]:</span>
+        <span class="n">sex2</span> <span class="o">=</span> <span class="s2">"Male"</span> <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="s2">"M"</span> <span class="k">else</span> <span class="s2">"Female"</span>
+        <span class="k">if</span> <span class="n">age</span> <span class="o">==</span> <span class="mi">25</span><span class="p">:</span>
+            <span class="n">age2</span> <span class="o">=</span> <span class="s2">"18-25"</span>
+        <span class="k">elif</span> <span class="n">age</span> <span class="o">==</span> <span class="mi">59</span><span class="p">:</span>
+            <span class="n">age2</span> <span class="o">=</span> <span class="s2">"26-59"</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">age2</span> <span class="o">=</span> <span class="s2">"60+"</span>
+
+        <span class="n">high_answer_rate_questions</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">high_scoring_questions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9a083b42">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">high_scoring_questions</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>{'M25-14',
+ 'M25-2',
+ 'M25-4',
+ 'M25-5',
+ 'M25-7',
+ 'M59-10',
+ 'M59-11',
+ 'M59-12',
+ 'M59-2',
+ 'M59-5',
+ 'M59-6',
+ 'M60-1',
+ 'M60-10',
+ 'M60-12',
+ 'M60-19',
+ 'M60-2',
+ 'M60-5',
+ 'M60-6',
+ 'M60-8',
+ 'W25-10',
+ 'W25-12',
+ 'W25-13',
+ 'W25-15',
+ 'W25-16',
+ 'W25-17',
+ 'W25-18',
+ 'W25-19',
+ 'W25-7',
+ 'W25-8',
+ 'W59-15',
+ 'W59-2',
+ 'W59-3',
+ 'W60-1',
+ 'W60-10',
+ 'W60-12',
+ 'W60-3',
+ 'W60-4',
+ 'W60-5',
+ 'W60-6',
+ 'W60-8'}</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9a4cc511">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">high_scoring_questions</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="si">{</span><span class="n">raw_data</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">scenarios_questions_dict</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="n">scenarios_answers_dict</span><span class="p">[</span><span class="n">col</span><span class="p">]:</span><span class="w"> </span><span class="sa">f</span><span class="s1">'Correct: </span><span class="si">{</span><span class="n">scenarios_answers_dict</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="si">}</span><span class="s1">'</span><span class="p">})</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+W25-8: Nidhi, 21, receives a notification that her loan approval is complete for a loan she never applied for, and her credit report shows a large debt. What is the best response Nidhi should do?
+Correct: Contact her bank and the credit bureau as soon as possible to report the problem and ask what steps she should take.    24
+Do nothing for now, figuring it’s probably just spam and will go away by itself.                                                  2
+Call the number from the message and try to judge if it’s legitimate based on how they respond.                                   1
+Name: count, dtype: int64
+
+M60-12: Mr. Rao, 68, gets email alert that show sign-ins from unknown locations. He is worried about losing contact with his friends and getting scammed.\r\n\r\nWhat is the best response Mr. Rao should do?
+Change his password and set up two-factor authentication.                       20
+Wait a few hours to see if the problem resolves itself.                          2
+Ask a family member to help check what’s happening before changing anything.     1
+Name: count, dtype: int64
+
+W60-12: Malati, 70, is logged out of her email and the recovery instructions are in English, which she finds hard to understand.\r\n\r\nWhat is the best response Malati should do?
+Ask a trusted family member or neighbor for help reading the instructions.     18
+Try leaving the account unused for a while and manage without email.            4
+Call a number that appeared in a pop-up window to ask for help.                 3
+Name: count, dtype: int64
+
+W25-15: Ruchika, 25, finds her private photographs have been leaked online and shared without her consent. She feels violated and anxious.\r\n\r\nWhat is the best response Ruchika should do?
+Save evidence and alert someone she trusts while preparing to report.                   22
+Ask trusted friends what steps she could take first.                                     2
+Try to block or report the account spreading photos but not contact anyone else yet.     1
+Consider deactivating her accounts temporarily while she figures out what to do.         1
+Name: count, dtype: int64
+
+W60-10: Anita, 70, is notified that her fixed deposit is due for renewal and receives a suspicious email link to “renew now.”\r\n\r\nWhat is the best response Anita should do?
+Correct: Check her fixed deposit status by logging into her usual banking app or visiting her bank.              16
+Use the helpline number included in the email to ask about the renewal, thinking it might be more convenient.     5
+Hold off on responding to the email, deciding to deal with the renewal at a later time.                           2
+Click the link and look over what’s being asked, planning to stop if it seems strange.                            2
+Name: count, dtype: int64
+
+W60-6: Sushma, a 67-year-old widow, discovers that her entire pension payout for the month has suddenly disappeared from her bank account without her knowledge.\r\n\r\nWhat is the best response Sushma should do?
+Correct: Call the bank’s customer service line right away to report the missing money and freeze her account.                      19
+Wait until the next day to visit the bank in person, hoping talking face-to-face with the branch manager will help sort it out.     3
+Ask a neighbor if they’ve ever faced something similar and get their thoughts before deciding what to do.                           3
+Name: count, dtype: int64
+
+M25-7: Rohan, 22, receives a call from someone claiming to be a police officer, demanding payment.\r\n\r\nWhat is the best response Rohan should do?
+Correct: Hang up the call without giving any information, then look up and contact the official police station independently to check if the demand was real.    22
+Transfer a small part of the requested payment electronically to see what happens next, thinking he might buy time and spot whether it’s genuine or not.          4
+Call back the phone number that contacted him to ask for more details about the demand, believing he can spot a scam if they sound suspicious.                    3
+Name: count, dtype: int64
+
+M59-2: Praveen, 56, eats at a wedding and soon his face and tongue start swelling and he finds it hard to breathe. He knows he’s allergic to certain nuts but doesn’t recall if he had them.\r\n\r\nWhat is the best response Praveen should do?
+Correct: Use the allergy medicine he carries with him—like an antihistamine—and at the same time ask someone nearby to get emergency help.    24
+Step outside for some air and rest quietly, hoping the symptoms will start to settle down on their own.                                        4
+Quickly pull aside a close relative or friend to explain what’s happening and get their advice before acting.                                  3
+Take a few sips of water to see if the swelling eases and wait a little before deciding what else to do.                                       2
+Name: count, dtype: int64
+
+M59-11: Deepak, 34, gets an SMS warning that his bank account will be blocked unless he “verifies” it through a suspicious link. The message appears urgent and bears his bank’s logo.\r\n\r\nWhat is the best response Deepak should do?
+Correct: Open his bank’s app or log in through his usual method to see if there are any actual alerts about his account, rather than using the link in the message.    25
+Call the phone number listed in the SMS and ask for more information, deciding how to respond based on what they say.                                                   4
+Forward the SMS to someone he trusts and see what advice or opinions they have before taking any action.                                                                4
+Name: count, dtype: int64
+
+W60-1: Asha, 68, suddenly feels tightness in her chest and shortness of breath at home.\r\n\r\nWhat is the best response Asha should do?
+Correct: Take an aspirin if she has one, call for help straight away, and let someone know what she’s feeling.    17
+Look up possible remedies online and try some suggestions at home to see if they help.                             6
+Lie down quietly and wait for a while to see if her symptoms get better on their own.                              1
+Wait until a family member arrives before deciding whether to act.                                                 1
+Name: count, dtype: int64
+
+M60-19: Mr. Mishra, 70, is unexpectedly asked to care for his grandchildren for a week while his children travel, but feels physically and emotionally overwhelmed by the responsibility. What is the best response Mr. Mishra should do?
+Tell his family honestly that he needs help and identify specific support he’d appreciate.     19
+Ask a trusted neighbor for temporary assistance when needed.                                    2
+Agree but check in with his children if the responsibility becomes too much.                    1
+Find time for himself only when the kids are busy.                                              1
+Name: count, dtype: int64
+
+W60-4: Vimala, 63, experiences sudden confusion and inability to recognize common objects in her kitchen.\r\n\r\nWhat is the best response Vimala should do?
+Correct: Move to a safe spot, let a nearby neighbor know she’s confused, and ask for help getting checked by a doctor.    17
+Wait a while and hope her memory becomes clearer before taking any action.                                                 4
+Ignore the confusion for now and keep doing her usual tasks to see if it passes.                                           3
+Try to finish what she was doing and then take a break to rest and see if the confusion goes away.                         1
+Name: count, dtype: int64
+
+M60-2: Mr. Gupta, 67, eats sweets at a family event and his lips, face, and throat begin swelling rapidly. He finds it hard to breathe and his voice is muffled.\r\n\r\nWhat is the best response Mr. Gupta should do?
+Correct: Take his allergy medicine if he has it, and ask someone nearby to get urgent medical help instead of waiting to see if it improves.    22
+Drink some water slowly and hope it helps ease the swelling, planning to wait a bit before doing anything more.                                  3
+Name: count, dtype: int64
+
+M60-6: Mr. Sharma, 68, finds multiple unauthorized transactions rapidly draining his pension account.\r\n\r\nWhat is the best response Mr. Sharma should do?
+Correct: Call his bank’s helpline right away to talk about what’s happening and find out how to stop further transactions.    24
+Get in touch with his son and see what advice he has before deciding what to do next.                                          1
+Name: count, dtype: int64
+
+M25-5: Sanjay, 19, suddenly feels chest tightness and breathlessness while running a campus marathon. He stops but still can’t catch his breath and feels faint.\r\n\r\nWhat is the best response Sanjay should do?
+Correct: Stop, sit upright, slow his breathing, and ask for help.    20
+Walk around trying to recover on his own.                             3
+Keep jogging, hoping it clears up.                                    2
+Hide symptoms and continue as normal.                                 1
+Name: count, dtype: int64
+
+M59-10: Irfan, 29, receives what looks like an official bank email urging him to click a link and update his KYC.\r\nWhat is the best response Irfan should do?
+Correct: Check his KYC status using the bank’s app or by logging in the usual way, without using the link in the email.    22
+Click the link and enter just the basics to see if it goes anywhere, then decide what to do next.                           3
+Decide to ignore the email for now and just wait to see if any further reminders come.                                      3
+Forward the message to someone in his family and ask if they’ve received anything similar before deciding.                  2
+Name: count, dtype: int64
+
+M59-5: Suresh, 48, starts sweating, shaking, and feels faint while commuting in the metro. He realizes he skipped both breakfast and lunch and is now feeling extremely weak.\r\n\r\nWhat is the best response Suresh should do?
+Correct: Sit down if possible, mention to someone nearby that he’s feeling unwell, and ask for anything sweet or sugary he can have while he waits for help.    26
+Remain standing even as he feels shaky and light-headed, telling himself he needs to push through until he reaches his destination.                              5
+Avoid making a scene, ignore his discomfort as best as he can, and wait until he gets home before taking care of his symptoms.                                   2
+Stay seated and quietly hope the weakness passes on its own, planning to grab food once he arrives at his stop.                                                  2
+Name: count, dtype: int64
+
+M60-1: Mr. Iyer, 72, suddenly experiences severe chest pain and shortness of breath while watching TV alone. He starts sweating and feels dizzy. Fearful, he isn't sure how serious it is.\r\n\r\nWhat is the best response Mr. Iyer should do?
+Correct: Take aspirin and seek help immediately.    22
+Google the symptoms first.                           1
+Call his family but not emergency services.          1
+Name: count, dtype: int64
+
+W59-3: Manisha, 42, wakes up with a sudden, partial loss of vision and numbness on one side of her body. She struggles to move and can barely speak clearly. She is alone at home.\r\n\r\nWhat is the best response Manisha should do?
+Correct: Call emergency medical services at once.    20
+Wait for family to return home.                       3
+Lie down and try to rest.                             1
+Name: count, dtype: int64
+
+M60-10: Mr. Singh, 66, receives an email alert asking him to urgently update his KYC details via a provided link.\r\n\r\nWhat is the best response Mr. Singh should do?
+Correct: Get in touch with his bank using the official website or stop by in person to ask if the alert is genuine before taking any action.    20
+Ignore the message for now and wait to see if the bank reaches out again with more information or reminders.                                     4
+Forward the email to family members first and ask what they think he should do about it.                                                         1
+Name: count, dtype: int64
+
+M60-5: Mr. Menon, 65, feels sudden dizziness and shakiness while walking to the market. He also has excessive sweating and blurry vision. He remembers he did not eat breakfast.\r\n\r\nWhat is the best response Mr. Menon should do?
+Correct: Sit down right away, ask someone nearby if they have anything sweet he can eat, and mention that he’s not feeling well so he can get help if needed.    26
+Name: count, dtype: int64
+
+M59-12: Sanjay, 43, receives alerts about sign-ins from new devices in another city. He fears losing important documents.\r\n\r\nWhat is the best response Sanjay should do?
+Correct: Go into his account settings to change his password, add two-factor authentication, and make sure nobody else can access his email.    26
+Wait and see if he can still log in later, hoping things settle on their own before changing anything important.                                 5
+Share what’s happening with a friend or family member first and discuss what steps might be best before making any changes.                      2
+Log out of his account on as many devices as possible and keep using his current password, thinking that should protect him for now.             1
+Name: count, dtype: int64
+
+W25-16: Ananya, 21, is the target of cyberbullying in a college WhatsApp group where personal details and insults are being spread rapidly. She feels isolated and embarrassed.\r\n\r\nWhat is the best response Ananya should do?
+Save screenshots as evidence and approach a counselor or a trusted adult for help.     23
+Block or mute key people in the group to create space.                                  3
+Stay in the group but minimize social media use for a short period.                     1
+Name: count, dtype: int64
+
+M60-8: Mr. Reddy, 70, receives an SMS stating a hefty loan has been approved in his name.\r\n\r\nWhat is the best response Mr. Reddy should do?
+Contact the concerned bank and credit bureau to report the issue.                                          22
+Disregard the message for now, but mentally note to check his credit score later.                           2
+Click the SMS link to check what it is, not planning to give personal information unless it looks real.     1
+Name: count, dtype: int64
+
+W25-17: Shreya, 25, discovers her roommate is spreading rumors about her in their PG hostel, leading to social exclusion. She becomes withdrawn and anxious in the common areas.\r\n\r\nWhat is the best response Shreya should do?
+Have a calm one-on-one conversation with her roommate or talk to the hostel warden.     22
+Talk through the issue first with a mutual friend, seeking suggestions.                  2
+Write a short message to her roommate expressing discomfort with the situation.          2
+Name: count, dtype: int64
+
+W25-10: Devika, 25, receives an email with a PDF “invoice” attachment and a message stating an urgent charge for an unknown purchase.\r\n\r\nWhat is the best response Devika should do?
+Do not open the PDF; verify independently using her bank app or statement.                                      22
+Open the PDF and quickly review the “invoice” for more details, planning to close it if it looks suspicious.     3
+Choose not to act for now, hoping there’s no follow-up.                                                          1
+Respond to the email with questions about the transaction before checking with her bank.                         1
+Name: count, dtype: int64
+
+W59-15: Chhavi, 32, finds her private documents uploaded online without her consent after her shared drive was hacked. She is outraged and humiliated but unsure how to respond. What is the best response Chhavi should do?
+Save evidence, secure accounts, and reach out for support while reporting.     18
+Avoid logging in to her accounts until she feels calmer.                        2
+Remove remaining files from the shared drive to prevent more leaks.             2
+Talk to friends for advice on next steps before taking action.                  1
+Name: count, dtype: int64
+
+M25-14: Sameer, 20, finds his email inbox filled with sign-ups from unknown websites, and warnings of failed payment attempts. He suspects someone has gained access to his email. What is the best response Sameer should do?
+Correct: Change the account password, look through security settings, and enable additional protection like two factor login.    21
+Start by cleaning up the inbox and marking suspicious mails as spam, so the situation feels manageable for now.                   2
+Try to figure things out by asking a tech savvy friend first, and only make changes once he’s sure what’s happening.              2
+Hold off for the moment to see if the unusual messages stop by themselves before taking stronger action.                          1
+Name: count, dtype: int64
+
+M25-2: Vikram, 21, eats a dessert at a party and suddenly has swelling of his lips and tongue, struggling to breathe. People around are not sure what’s happening. He recalls having a food allergy as a child.\r\n\r\nWhat is the best response Vikram should do?
+Correct: Use allergy medication if available and call for emergency help.    23
+Drink water and wait a while.                                                 2
+Call a friend for advice first.                                               1
+Hope the swelling goes down on its own.                                       1
+Name: count, dtype: int64
+
+W25-13: Kavya, 21, receives a call from someone pretending to be a “digital wallet helpline” asking for her OTP to resolve an issue. She feels pressured as the caller is persistent.\r\n\r\nWhat is the best response Kavya should do?
+Correct: Say no to sharing her OTP, end the call, and check with the actual wallet app’s helpline to see if there really is a problem.    24
+Tell the caller she’ll get back to them after she has time to think, and wait before making any decisions.                                 1
+Name: count, dtype: int64
+
+W60-3: Parvati, 70, suddenly loses vision in one eye while reading.\r\n\r\nWhat is the best response Parvati should do?
+Correct: Stop reading, call for help, and get to the hospital.    19
+Sprinkle eyes with water hoping it will clear the vision.          5
+Continue her activities, ignoring the issue.                       1
+Name: count, dtype: int64
+
+W25-12: Aishwarya, 23, notices unauthorized UPI transactions on her phone after connecting to café Wi-Fi. Several payments have already gone through.\r\n\r\nWhat is the best response Aishwarya should do?
+Correct: Use her banking app to block UPI transactions right away and let her bank know what’s happened.               23
+Keep checking her bank app for more details and wait to see if any new alerts pop up before deciding on next steps.     2
+Decide to wait and call her bank later, thinking they’ll be able to sort things out when she has more time.             1
+Ask the friends she’s with what they think she should do about the unexpected payments before acting.                   1
+Name: count, dtype: int64
+
+W59-2: Shruti, 49, eats a snack at a wedding and within minutes feels her lips and throat swelling. She starts experiencing difficulty breathing. She remembers a doctor once mentioned a potential food allergy.\r\n\r\nWhat is the best response Shruti should do?
+Correct: Take her allergy medicine if she has it, and get someone to call for medical help right away.    17
+Call a family member to ask what she should do, before deciding on next steps.                             4
+Drink some water and wait to see if the swelling and breathing trouble settle on their own.                2
+Name: count, dtype: int64
+
+W60-8: Rani, aged 65, notices a loan has appeared on her credit report which she never took.\r\n\r\nWhat is the best response Rani should do?
+Correct: Contact her bank or credit service to ask about placing a fraud alert on her credit profile.             19
+Hold off on taking any steps until she can talk with a friend who may have handled something like this before.     3
+Assume it’s just a simple error that should get fixed automatically, so check her report again after a week.       2
+Drop by her local police station to discuss the situation and get their input before deciding what to do.          1
+Name: count, dtype: int64
+
+M25-4: Prateek, 22, suddenly feels intense pain and swelling after stepping on a rusty nail during a cricket game. The wound is deep and bleeding. He is worried about infection but unsure what to do.\r\nWhat is the best response Prateek should do?
+Correct: Clean the wound carefully, press to control the bleeding, cover it, and arrange to see a doctor right away.    18
+Try to wipe the wound with a cloth and keep playing, planning to properly clean and treat it after the game.             4
+Rinse the wound quickly with available water, cover it for now, and then check later if it still seems serious.          3
+Call a teammate over for their advice first and decide based on what they suggest.                                       2
+Name: count, dtype: int64
+
+M59-6: Rahul, 35, wakes up to see a flood of unfamiliar transactions draining his joint account overnight.\r\n\r\nWhat is the best response Rahul should do?
+Correct: Use his banking app or the helpline to stop further transactions right away and then check what else needs to be reported.    23
+Keep monitoring the account for a day or two, in case the transactions are just temporary holds and disappear on their own.             5
+Contact family members first to see what they suggest before making any changes or reporting anything.                                  2
+Wait to visit a branch in person before doing anything, thinking it’s safer to talk face-to-face so that nothing gets missed.           1
+Name: count, dtype: int64
+
+W25-18: Diya, 18, is pressured by her peers to drink alcohol at a college fest, despite her strong reservations. She feels anxious and cornered.\r\n\r\nWhat is the best response Diya should do?
+Correct: Say clearly that she doesn’t want to drink and, if things feel too uncomfortable, move away from the group for a bit.    19
+Stay close to the group but quietly avoid the alcohol, hoping the others stop bringing it up.                                      2
+Politely say no to the drink but stick around with her friends as long as she feels okay.                                          2
+Change the topic or suggest another activity so the group focuses on something else instead of her decision.                       1
+Name: count, dtype: int64
+
+W25-19: Aarti, 24, receives inappropriate messages from a teaching assistant but is worried about complaining due to academic repercussions. She feels helpless but wants the behavior to stop.\r\n\r\nWhat is the best response Aarti should do?
+Correct: Keep the messages as evidence and reach out to the student support office or someone at the university who can help.    24
+Reply directly to the teaching assistant and ask them to stop sending such messages, hoping that will resolve it.                 3
+Try to avoid further conversations with the teaching assistant, hoping the situation will improve if she keeps her distance.      1
+Name: count, dtype: int64
+
+W60-5: Shobha, 77, discovers that her medication pills look different than usual after a recent refill.What would be a sensible step for Shobha to take after noticing this change?
+Correct: Pause before taking the pills, call the pharmacy to explain what she’s noticed, and ask if there’s been any change to her prescription.    18
+Go ahead and take the medication, thinking that changes in appearance sometimes happen.                                                              3
+Check with her friends or a chat group to see if anyone else has experienced something similar, and ask what they did.                               2
+Decide not to worry about the packaging or pill color and keep using the medication as directed.                                                     2
+Name: count, dtype: int64
+
+W25-7: Mehak, 24, receives a call from someone claiming to be from a government office, threatening legal action unless she immediately pays a "pending fine" online.\r\n\r\nWhat is the best response Mehak should do?
+Hang up, then verify the demand with official government contacts.                            21
+Pause and wait until she can talk to family, feeling too anxious to decide alone.              2
+Make a small payment now just in case, afraid she’ll get into trouble if she waits.            1
+Try bargaining on the call, reasoning that an official would allow her to settle for less.     1
+Name: count, dtype: int64
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=37508d98">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
